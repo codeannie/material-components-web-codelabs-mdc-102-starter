@@ -2,6 +2,7 @@
 @import "@material/textfield/mdc-text-field";
 @import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
+@import "@material/image-list/mdc-image-list";
 
 html, body {
   height: 100%;
@@ -60,4 +61,9 @@ body {
 .shrine-title {
   align-self: center;
   margin: 5px auto;
+}
+
+.product-list {
+  @include mdc-image-list-standard-columns(4);
+  overflow: auto;
 }
